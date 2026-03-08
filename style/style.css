@@ -272,7 +272,7 @@ body {
     max-width: 100%;
   }
   #email-field{
-    max-width: 150px;
+    max-width: 100px;
     font-size: 14px;
     padding: 10px 16px;
   }
