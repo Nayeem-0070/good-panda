@@ -87,12 +87,41 @@ body {
   border-radius: 5px;
   padding: 15px;
 }
+/* shoes card design */
+.shoes-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* justify-content: center; */
+}
+.cards{
+    max-width: 360px;
+    padding: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #1F1F1F;
+    text-align: center;
+    margin-bottom: 16px;
+    box-shadow: 0 5px 5px #cccbcb;
+    border-radius: 20px;
+    border: 1px solid #6d6c6c;
+}
 
 /* shared design/ common design */
 .btn {
   background-color: black;
   color: white;
-  padding: 20px 14px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.btn:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
 }
 .p-text {
   font-size: 16px;
@@ -103,6 +132,7 @@ body {
 .titles {
   font-size: 36px;
   font-weight: bold;
+  margin-bottom: 25px;
 }
 .display {
   display: flex;
@@ -153,6 +183,9 @@ body {
     gap: 20px;
     justify-content: center;
   }
+  .shoes-card{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Mobile View */
@@ -180,6 +213,12 @@ body {
     gap: 20px;
   }
   .Watch, .Bag , .Shoes{
+    max-width: 100%;
+  }
+  .shoes-card{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cards{
     max-width: 100%;
   }
 }
