@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+/* header design */
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.common {
+  margin-top: 30px;
+  max-width: 1128px;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  align-items: center;
+  margin-top: 45px;
+  background-color: #feeae9;
+}
+.description {
+  max-width: 560px;
+  margin-bottom: 10px;
+}
+.description h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 56px;
+}
+.description h3{
+    font-size: 40px;
+    color: #FF136F;
+}
+.pink-btn{
+    background-color: #FF136F;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero-image {
+  max-width: 400px;
+}
+
+
+/* shared design/ common design */
+.btn {
+  background-color: black;
+  color: white;
+  padding: 20px 14px;
+}
+.p-text{
+    font-size: 16px;
+    font-weight: 400;
+    color: #4E4E4E;
+    margin-bottom: 16px;
+}
+
+
+/* Laptop View */
+@media screen and (max-width: 1200px) {
+  body {
+    max-width: 1000px;
+  }
+  
+}
+
+/* Tablet View */
+@media screen and (max-width: 992px) {
+  body {
+    max-width: 720px;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .hero {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.description h1{
+    font-size: 30px;
+}
+.description h3{
+    font-size: 30px;
+}
+.p-text{
+    font-size: 12px;
+}
+.pink-btn{
+    padding: 10px 16px;
+}
+}
+
+/* Mobile View */
+@media screen and (max-width: 576px) {
+  body {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .hero{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .pink-btn{
+    margin-top: 15px;
+}
+}
