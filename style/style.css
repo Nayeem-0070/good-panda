@@ -8,6 +8,7 @@
 body {
   max-width: 1128px;
   margin: 0 auto;
+  background-color: #fdfdfd;
 }
 /* header design */
 .logo {
@@ -37,22 +38,55 @@ body {
   font-style: normal;
   font-size: 56px;
 }
-.description h3{
-    font-size: 40px;
-    color: #FF136F;
+.description h3 {
+  font-size: 40px;
+  color: #ff136f;
 }
-.pink-btn{
-    background-color: #FF136F;
-    color: white;
-    border: none;
-    padding: 14px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+.pink-btn {
+  background-color: #ff136f;
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .hero-image {
   max-width: 400px;
 }
-
+/* main design */
+.categories {
+  margin-top: 52px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 98px;
+}
+.all-category h2 {
+  margin-top: 50px;
+}
+.Watch {
+  max-width: 350px;
+  width: 100%;
+  background-color: #ff9c35;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+.Bag {
+  max-width: 350px;
+  width: 100%;
+  background-color: #ff136f;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+.Shoes {
+  max-width: 350px;
+  width: 100%;
+  background-color: #3f07f8;
+  color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
 
 /* shared design/ common design */
 .btn {
@@ -60,20 +94,27 @@ body {
   color: white;
   padding: 20px 14px;
 }
-.p-text{
-    font-size: 16px;
-    font-weight: 400;
-    color: #4E4E4E;
-    margin-bottom: 16px;
+.p-text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4e4e4e;
+  margin-bottom: 16px;
 }
-
+.titles {
+  font-size: 36px;
+  font-weight: bold;
+}
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 /* Laptop View */
 @media screen and (max-width: 1200px) {
   body {
     max-width: 1000px;
   }
-  
 }
 
 /* Tablet View */
@@ -88,25 +129,30 @@ body {
     gap: 15px;
   }
   .hero {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  align-items: center;
-  margin-top: 45px;
-}
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    margin-top: 45px;
+  }
 
-.description h1{
+  .description h1 {
     font-size: 30px;
-}
-.description h3{
+  }
+  .description h3 {
     font-size: 30px;
-}
-.p-text{
+  }
+  .p-text {
     font-size: 12px;
-}
-.pink-btn{
+  }
+  .pink-btn {
     padding: 10px 16px;
-}
+  }
+  .categories{
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
 }
 
 /* Mobile View */
@@ -121,12 +167,19 @@ body {
     align-items: center;
     text-align: center;
   }
-  .hero{
+  .hero {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
   }
-  .pink-btn{
+  .pink-btn {
     margin-top: 15px;
-}
+  }
+  .categories {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Watch, .Bag , .Shoes{
+    max-width: 100%;
+  }
 }
